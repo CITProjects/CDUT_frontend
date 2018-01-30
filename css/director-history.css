@@ -9,45 +9,27 @@ a, a:hover {
   color: black;
 }
 
-.red {
-  background: red;
-  color: white;
-}
-
-.green {
-  background: green;
-  color: white;
-}
-
-.blue {
-  background: blue;
-  color: white;
-}
-
-.tr {
-  opacity: 0.5;
-}
-
 .comment {
   position: relative;
   width: 100%;
   height: 600px;
   background: url(../images/CIT_bilding.png) no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .com-block {
   position: absolute;
   height: 100%;
   width: 70%;
-  left: 50%;
-  transform: skewX(-25deg);
+  left: 57%;
+  transform: skewX(-16deg);
   background: rgba(0, 0, 0, 0.7);
 }
 
 .com-block section {
-  transform: skewX(25deg);
-  margin: 200px 350px 50px 150px;
+  transform: skewX(15deg);
+  margin: 200px 430px 50px 70px;
 }
 
 .com-block h3.history-title {
@@ -70,18 +52,70 @@ a, a:hover {
   text-align: center;
 }
 
-.com-block cite {
+.director {
+  position: absolute;
+  z-index: 5;
+  width: 70%;
+  height: 100%;
+  left: 100%;
+  background: url(../images/director.png) no-repeat;
+  transition: left 0.7s;
+}
+
+.arrow {
+  position: absolute;
+  z-index: 5;
+  left: -5%;
+  top: 40%;
+  cursor: pointer;
+  transition: left 0.7s;
+}
+
+.arrow img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px 2px black;
+  transform: rotate(-30deg);
+  transition: transform 0.7s;
+}
+
+.director:hover .arrow {
+  left: 8%;
+}
+
+.director:hover .arrow img {
+  transform: rotate(30deg);
+}
+
+.director:hover {
+  left: 51%;
+}
+
+.description {
+  position: absolute;
+  left: 20%;
+  bottom: 50px;
+}
+
+.director cite {
   display: block;
   margin-left: 20px;
   color: white;
   font-style: normal;
 }
 
-.com-block .name {
+.director .name {
   font-size: 30px;
   line-height: 34px;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 10px;
 }
+
+
+
+
 

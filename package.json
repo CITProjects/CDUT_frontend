@@ -1,0 +1,23 @@
+{
+  "name": "cdut_frontend",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CITProjects/CDUT_frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CITProjects/CDUT_frontend/issues"
+  },
+  "homepage": "https://github.com/CITProjects/CDUT_frontend#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  }
+}

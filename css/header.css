@@ -1,0 +1,229 @@
+html, body {
+  margin: 0;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: "Calibri";
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.header-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  margin-left: 100px;
+  width: 200px;
+}
+
+.right {
+  margin-right: 100px;
+  width: 400px;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0;
+  border-bottom: 5px solid transparent;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  z-index: 1;
+  width: 100%;
+  height: 5px;
+  background-image: linear-gradient(to right, #474a9f, #2efeff);
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.menu {
+  margin-right: 40px;
+}
+
+.language {
+  margin-right: 80px;
+}
+
+.anonses {
+  margin-right: 10px;
+}
+
+.site-btn {
+  display: block;
+  color: white;
+  padding: 0 10px;
+  border-radius: 20px;
+  box-shadow: -5px 0 15px -5px black;
+}
+
+.anonses .site-btn {
+  background-color: red;
+}
+
+.menu {
+  position: relative;
+  z-index: 10;
+  width: 40px;
+  height: 25px;
+  background-color: #2f2f2f;
+  background-origin: content-box;
+  cursor: pointer;
+}
+
+.menu::before, .menu::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+}
+
+.menu::before {
+  top: 5px;
+}
+
+.menu::after {
+  bottom: 5px;
+}
+
+.menu:hover .submenu {
+  display: block;
+}
+
+.menu .submenu {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  bottom: -208px;
+  left: -140px;
+  margin: 0;
+  padding: 150px 0 5px;
+  list-style: none;
+  width: 200px;
+  box-shadow: 5px 5px 10px -5px grey;
+}
+
+.submenu li a {
+  display: block;
+  color: black;
+}
+
+.submenu li a:hover {
+  color: #5ba1a3;
+  text-decoration: underline;
+}
+
+.submenu hr {
+  border-color: #33bfdd;
+  margin: 5px 10px;
+}
+
+.language {
+  position: relative;
+  color: #2f2f2f;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.language::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: -20%;
+  top: 40%;
+  border-bottom: 10px solid #2f2f2f;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.language::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 75px;
+  top: -15px;
+  left: 75px;
+  background-image: url(../images/flag.png);
+}
+
+.language:hover .choose-lang {
+  display: block;
+}
+
+.language:hover::before {
+  transform: rotate(180deg);
+}
+
+.language .choose-lang {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  bottom: -200px;
+  left: -25px;
+  margin: 0;
+  padding: 150px 0 5px;
+  list-style: none;
+  width: 100px;
+  box-shadow: 5px 5px 10px -5px grey;
+}
+
+.choose-lang  hr {
+  border-color: #828282;
+  margin: 5px 10px;
+  border-size: 1px;
+}
+
+.choose-lang li a {
+  display: block;
+  color: #bfbfbf;
+  text-align: center;
+}
+
+.choose-lang li a:hover {
+  color: #6daaac;
+  text-decoration: underline;
+}
+
+.main-picture {
+  position: relative;
+}
+
+.main-picture img {
+  display: block;
+  width: 100%;
+  height: 590px;
+}
+
+.main-picture .next {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 49%;
+}
+
+.next img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px 2px black;
+}

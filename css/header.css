@@ -116,13 +116,18 @@ header::after {
   margin: 0;
   padding: 150px 0 5px;
   list-style: none;
-  width: 200px;
+  width: 220px;
   box-shadow: 5px 5px 10px -5px grey;
+}
+
+.submenu li {
+  background-color: #fff;
 }
 
 .submenu li a {
   display: block;
   color: black;
+  margin: 0 0 0 10px;
 }
 
 .submenu li a:hover {
@@ -132,7 +137,7 @@ header::after {
 
 .submenu hr {
   border-color: #33bfdd;
-  margin: 5px 10px;
+  margin: 0 10px;
 }
 
 .language {

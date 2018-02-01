@@ -78,18 +78,18 @@ a, a:hover {
   padding: 0;
 }
 
-.news-block .comentary {
+.comentary {
   position: relative;
   font-size: 12px;
   line-height: 14px;
   margin-left: 70px;
 }
 
-.news-block .comentary h3 {
+.comentary h3 {
   margin: 20px 0 10px;
 }
 
-.news-block .comentary::before {
+.comentary::before {
   content: "";
   position: absolute;
   display: block;
@@ -99,7 +99,7 @@ a, a:hover {
   left: -70px;
 }
 
-.news-block .comentary::after {
+.comentary::after {
   content: "109 990";
   position: absolute;
   display: inline-block;

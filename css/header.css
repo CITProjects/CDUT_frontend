@@ -76,6 +76,11 @@ header::after {
   background-color: red;
 }
 
+.site-btn:hover {
+  color: white;
+  filter: brightness(0.8);
+}
+
 .menu {
   position: relative;
   z-index: 10;
@@ -152,11 +157,12 @@ header::after {
   content: "";
   position: absolute;
   display: block;
-  left: -20%;
+  left: -25%;
   top: 40%;
-  border-bottom: 10px solid #2f2f2f;
+  border-top: 10px solid #2f2f2f;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
+  transition: transform 0.7s;
 }
 
 .language::after {

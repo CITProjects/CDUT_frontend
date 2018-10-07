@@ -1,11 +1,13 @@
-body, html {
+body,
+html {
   margin: 0;
   font-size: 20px;
   line-height: 26px;
   font-family: "Calibri";
 }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none;
   color: black;
 }
@@ -32,7 +34,7 @@ a, a:hover {
 
 .video-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
   padding: 10px;
@@ -45,6 +47,7 @@ a, a:hover {
   display: block;
   width: 300px;
   margin: 10px;
+  margin-bottom: 60px;
 }
 
 .video-block .main-video {
